@@ -1,0 +1,12 @@
+{"state":1,"msg":"获取文章列表成功",
+"data":[
+{"id":1,"src":"./pictures/pic (1).jpg","name":"相册1","desc":"这是相册1的描述","sort":"人物","time":"2018-12-15 9:36"},
+{"id":2,"src":"./pictures/pic (2).jpg","name":"相册2","desc":"这是相册2的描述","sort":"风景","time":"2018-02-01 15:40"},
+{"id":3,"src":"./pictures/pic (3).jpg","name":"相册3","desc":"这是相册3的描述","sort":"动漫","time":"2019-01-21 19:26"},
+{"id":4,"src":"./pictures/pic (4).jpg","name":"相册4","desc":"这是相册4的描述","sort":"美图","time":"2018-09-01 8:15"},
+{"id":5,"src":"./pictures/pic (5).jpg","name":"相册5","desc":"这是相册5的描述","sort":"壁纸","time":"2018-02-17 19:17"},
+{"id":6,"src":"./pictures/pic (6).jpg","name":"相册6","desc":"这是相册6的描述","sort":"清新","time":"2018-08-01 12:46"},
+{"id":7,"src":"./pictures/pic (7).jpg","name":"相册7","desc":"这是相册7的描述","sort":"忧郁","time":"2018-05-11 13:14"},
+{"id":8,"src":"./pictures/pic (8).jpg","name":"相册8","desc":"这是相册8的描述","sort":"单色","time":"2018-07-19 15:05"}
+]
+}

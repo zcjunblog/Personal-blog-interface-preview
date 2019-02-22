@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>(゜-゜)つロ 干杯~</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="//lib.baomitu.com/viewerjs/1.3.0/viewer.min.css">
+	<link rel="icon" href="img/logo.png">
+	<script src="//lib.baomitu.com/viewerjs/1.3.0/viewer.min.js"></script>
+	<script src="./js/jquery-1.11.1.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/global.js"></script>
+</head>
+<body onload="createCode()">
+	<div id="back-top"><a href="#gotop" onclick="scrollToTop();return false"></a></div>
+	<!-- 头部 begin-->
+	<div class="header" id="gotop">
+		<div class="nav">
+			<nav class="clearfix">
+				<div class="navfl fl">
+					<ul class="clearfix">
+						<!-- <li><img src="img/hdrenwu.png" alt=""></li> -->
+						<li><a class="active" href="index.html">首页</a></li>
+						<li><a href="./t.html">微语</a></li>
+						<li><a href="./photos.html">相册</a></li>
+						<li><a href="./login.html">登陆</a></li>
+					</ul>
+				</div>
+				<!-- 左边结束 -->
+				<div class="navrt fr">
+					<ul class="clearfix">
+						<li><img src="img/hdrenwu.png" alt=""> <input type="text" placeholder="点击量top 10"><button onclick="test()"></button></li>
+						<li><a href="guestbook.html">吐槽板</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- 头像部分 -->
+		<div class="tx">
+			<div class="img">
+				<a href="javascript:void(0);" title="名字+个人主页"></a>
+			</div>
+			<!-- 头像部分 -->
+			<!-- 微语公告 -->
+			<div class="wenzi">
+				<h1>Miller's blog</h1>
+				<div id="news">
+					<ul>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第一条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第一条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第二条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第一条，这是二个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第三条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第三条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第四条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第四条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第五条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第五条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第六条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第六条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第七条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第七条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 微语公告 -->
+		</div>
+	</div>	
+	<!-- 头部 end -->
+
+	<!-- 页面内容 begin -->
+	<div class="content">
+		<div class="container content-container">
+			<div class="row rowliuyan">
+				<div class="col-md-9 liuyanban">
+					<div class="page-header">
+						<h2></span>有一种心态叫放下，有一种境界叫舍得</h2>
+						<div class="lyxx">
+							<i class="glyphicon glyphicon-home"></i><a href="index.html">首页</a><span>&#187;</span><i class="glyphicon glyphicon-list-alt"></i><span>心情日志&#187;</span><i class="glyphicon glyphicon-time"></i><span>2018年3月1日下午</span>
+						</div>
+					</div>
+					<div class="article" id="zcjunImg">
+						<p style="text-align: center;"><img style="border-radius: 10px;cursor: zoom-in;" src="./img/bg.jpg" alt="" width="80%"></p>
+						<p>心像是个口袋，什么都不装的叫心灵，装一点的叫心眼，装多了的的叫心计，装更多的叫心机，装得太多了最后那些负累就只能被当作心事了。人活在世往往过于在意近在咫尺的功名利禄，我们的生活是否如与朋友说起时一般绚烂夺目，现实生活中亦有很多人深陷进没有结果的爱情里，明知是错的，还要迂回前进。那些口口声声说着为了生活的衣食无忧、为了孩子不得不继续维持的婚姻。很多人拿不起又放不下，任由空白的生活在自己的眼中周而复始、慢慢的这种负累侵蚀的我们身心不堪重负。试着放下吧，放下你的疲惫、放下那些没有结果的执念、清醒时看到的你和他的未来若是并不理想，不如劝自己趁早放下，长痛不如短痛。再试着看开些，有钱就会拥有快乐么？就像你耗尽心力换得了工作场上的升职机会，而就在你即将上任时被查出了重症，钱能换回健康么？再多的钱能换回你的生命，换回勃勃生机的青春么？钱固然重要，可是与生命、与亲情、爱情比起来，钱真的没有那么重要。有形的财富无法与无价的情感、生命相提并论，何来取舍一说呢。</p>
+						<p>人一定要想清三个问题，第一你有什么，第二你要什么，第三你能放弃什么。对于多数人而言：有什么，我们往往很轻易的就评价出自己的现状；那要什么，大多数人内心也有明确的想法；那么问题来了，现在你告诉我你能放弃什么，几乎没有人可以做到不放弃就轻易获得了全部你想要的东西。人生不会每一件事都会让自己称心如意，常言道：人为财死，鸟为食亡。但有多少人为了事业有成，最后倒在了工作岗位上，那些口耳相传的过劳案例并非偶然意外、就像疾病的发展也是有一个循序渐进的过程。外在的过劳加上心里的过度忧思，外因内因从不分离。那些远赴千里外的地方工作的子女，其家中病重老母为不让远方的儿过于掂念，不忍心在孩子耳边传递生病讯息，弥留之际也未能见上最后一面。我并不赞成那些抛家舍业的一颗心思完全放在工作上的做法，工作一时的，即便离开这，你仍有再次获得的机会。而家庭、健康却要陪伴你很久，且一旦失去就是永远。或许你是为财而死，但是不值得。</p>
+						<p>生活中很多人喜欢就一件事左右摇摆，举棋不定。轻易落子怕输了，一子不落怕错过。于是他们一直纠结于细微得不值得一提的小事，让自己始终活在紧张的泥潭不能自拔。在自己短暂的一生中，谨小慎微，防微杜渐，也许别人的一句话，一个眼神，一个表情，都会不断揣摩，别人随口一说的话却始终放在心里耿耿于怀，凡事有一点端倪便以偏概全，杞人忧天。所以这些人总是活得很累，舒心二字与他们完全绝缘。其实人生有一种心态叫放下，。不必凡事都争个明白，我们生活的这个社会本就很复杂，然而很多人把这个本来就复杂的社会弄得更加复杂，复杂的无章可循。贪婪的人容易受到打击。欲望越少，生活越幸福。</p>
+					</div>
+					<div class="fxds">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="test()">分享文章</button>
+						<button id="donate_open" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">打赏支持</button>
+					</div>
+					<div class="banquan">
+						<p><span><i class="glyphicon glyphicon-tags"></i>标签：</span><a href="javascript:void(0);" onclick="test()" class="tag">情感</a></p>
+						<p><span><i class="glyphicon glyphicon-bullhorn"></i>版权声明：若无特殊注明，本文皆为子成君原创，转载请保留文章出处。</span></p>
+						<p><span><i class="glyphicon glyphicon-link"></i>本文链接：有一种心态叫放下，有一种境界叫舍得 https://www.xxx.com/wenzhang.html</span></p>
+					</div>
+					<div class="cutline"><span>本文到此结束</span> </div>
+					<h2 class="fabiaotucao"><span class="glyphicon glyphicon-pencil"></span>发表吐槽</h2>
+					<h2 class="leifeng">匿名评论 叫我雷锋~</h2>
+					<textarea name="" id="textarea" placeholder="让评论变得如此简单。" cols="30" rows="10"></textarea>
+					<!-- 提交清除 -->
+					<div class="tijiaoqingchu">
+						<form id="form1" runat="server" onsubmit="validateCode()" style="float: right; margin:5px;height: 34px;line-height: 34px">
+							<div class="code" id="checkCode" onclick="createCode()" ></div></td>
+							<a href="javascript:;" onclick="createCode()">看不清换一张</a>
+							验证码：
+							<input type="text"  id="inputCode" style="height: 24px;width: 60px;cursor: auto;" />
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="cleartext()">清除</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"  id="Button1" onclick="validateCode()">提交评论</button>
+						</form>
+					</div>
+					<!-- 提交清除 -->
+					<!-- 留言显示部分 -->
+					<div class="liuyanwidget">
+						<h2 class="fabiaotucao"><span class="glyphicon glyphicon-comment"></span>已有三条评论</h2>
+						<ul class="zxpl">
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第一条评论,涛哥好帅噢！</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第二条评论,涛哥好帅噢！涛哥好帅噢！</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第三条评论,涛哥好帅噢！涛哥好帅噢！涛哥好帅噢！</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 侧栏 -->
+				<div class="col-md-3">
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-map-marker"></span>欢迎来访！</h4>
+						<div class="iptu"></div>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-tasks"></span>分类</h4>
+						<ul class="clearfix">
+							<li class="duogefl">
+								<div>情感文章</div>
+								(<a href="javascript:void(0);">心情日志</a>
+								<a href="javascript:void(0);">杂记摘抄</a>)
+							</li>
+							<li class="duogefl">
+								<div>技术相关</div>
+								(<a href="javascript:void(0);">前端笔记</a>
+								<a href="javascript:void(0);">后端技术</a>
+								<a href="javascript:void(0);">全栈开发</a>)
+							</li>
+							<li class="dangefl">
+								<div>软件工具</div>
+								<div>网站源码</div>
+							</li>
+							<li class="dangefl">
+								<div>影视资源</div>
+								<div>音乐分享</div>
+							</li>
+							<li class="dangefl">
+								<div>其他资源</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-th-list"></span>存档</h4>
+						<ul class="clearfix">
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年11月(1)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年9月(3)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年4月(2)</div>
+							</li>
+
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年3月(6)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年12月(7)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年11月(7)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年10月(5)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年9月(3)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年8月(6)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年7月(2)</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-pencil"></span>最新文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-fire"></span>热门文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">4</em><a href="javascript:void(0);">乌克兰为何冒险挑衅俄罗斯？俄方一针见血指出背后原因</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">5</em><a href="javascript:void(0);">俄中学生2019年将首次参加国家统一考试汉语科目考试</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">6</em><a href="javascript:void(0);">深圳南山半马乱象：选手集体抄近道，多个号码被套牌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-random"></span>随机文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">4</em><a href="javascript:void(0);">乌克兰为何冒险挑衅俄罗斯？俄方一针见血指出背后原因</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">5</em><a href="javascript:void(0);">俄中学生2019年将首次参加国家统一考试汉语科目考试</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">6</em><a href="javascript:void(0);">深圳南山半马乱象：选手集体抄近道，多个号码被套牌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-link"></span>友情链接</h4>
+						<ul class="link">
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度百科</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度知道</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度文库</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">虎牙直播</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">熊猫直播</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">今日焦点</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">腾讯视频</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">腾讯游戏</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">中华文库</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">苏宁易购</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">新浪博客</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">搜狐影音</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">哔哩哔哩</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-qrcode"></span>加群交流</h4>
+						<div class="qrcode">
+							<img src="./img/weixin.jpg" alt="" width="240" height="240">
+						</div>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-signal"></span>站点统计</h4>
+						<div class="zdtj">
+							<p>微语数量：11条</p>
+							<p>文章数量：225篇</p>
+							<p>吐槽数量：572次</p>
+							<p>勉强存活：287天</p>
+							<p>诞生日期：2018年11月28号</p>
+						</div>
+					</div>
+				</div>
+				<!-- 侧栏 -->
+			</div>
+		</div>
+	</div>
+	<!-- 页面内容 end -->
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="container">
+			<p>文中出现的商标及图像版权属于其合法持有人，只供传递信息之用，非商务用途。互动交流时请遵守理性，宽容，换位思考的原则。</p>
+			<p>基于HTML+CSS+JavaScript+Bootstrap3.3.7+jQuery1.11.1</p>
+			<p>Copyright &copy; 2018-2018 By子成君</p>
+		</div>
+	</footer>
+	<!-- 底部 -->
+	<!-- 微信 -->
+	<div id="donate" class="donate">
+		<h3><i class="fa fa-qrcode"></i> 微信扫一扫<span id="donate_close" title="关闭">×</span></h3>
+		<table cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="label"><label for="weixin">可以撩可以聊但不要给我发广告噢！</label></td>                 
+			</tr>
+		</table>
+		<img src="https://www.zcjun.com/content/uploadfile/tpl_options//weixin.jpg" alt="支付二维码" id="donate_code" title="支付支付" />            
+	</div>
+	<!-- 微信 -->
+	<script> $('#donate_open').click(function(){
+		$('#donate').show();
+	})
+	$('#donate_close').click(function(){
+		$('#donate').hide();
+	})
+	    var viewer = new Viewer(document.getElementById('zcjunImg'));
+</script>
+</body>
+</html>

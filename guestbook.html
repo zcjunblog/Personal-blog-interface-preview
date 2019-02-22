@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>(゜-゜)つロ 干杯~</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="img/logo.png">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/global.js"></script>
+</head>
+<body onload="createCode()">
+	<div id="back-top"><a href="#gotop" onclick="scrollToTop();return false"></a></div>
+	<!-- 头部 begin-->
+	<div class="header" id="gotop">
+		<div class="nav">
+			<nav class="clearfix">
+				<div class="navfl fl">
+					<ul class="clearfix">
+						<!-- <li><img src="img/hdrenwu.png" alt=""></li> -->
+						<li><a class="active" href="index.html">首页</a></li>
+						<li><a href="#">日志</a></li>
+						<li><a href="#">相册</a></li>
+						<li><a href="#">说说</a></li>
+					</ul>
+				</div>
+				<!-- 左边结束 -->
+				<div class="navrt fr">
+					<ul class="clearfix">
+						<li><img src="img/hdrenwu.png" alt=""> <input type="text" placeholder="点击量top 10"><button onclick="test()"></button></li>
+						<li><a href="#">吐槽板</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- 头像部分 -->
+		<div class="tx">
+			<div class="img">
+				<a href="javascript:void(0);" title="名字+个人主页"></a>
+			</div>
+			<!-- 头像部分 -->
+			<!-- 微语公告 -->
+			<div class="wenzi">
+				<h1>Miller's blog</h1>
+				<div id="news">
+					<ul>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第一条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第一条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第二条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第一条，这是二个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第三条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第三条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第四条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第四条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第五条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第五条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第六条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第六条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第七条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第七条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 微语公告 -->
+		</div>
+	</div>	
+	<!-- 头部 end -->
+
+	<!-- 页面内容 begin -->
+	<div class="content">
+		<div class="container content-container">
+			<div class="row rowliuyan">
+				<div class="col-md-9 liuyanban">
+					<div class="page-header">
+						<h2><span class="glyphicon glyphicon-send"></span>留言板</h2>
+						<div class="lyxx">
+							<i class="glyphicon glyphicon-home"></i><a href="index.html">首页</a><span>&#187;</span><i class="glyphicon glyphicon-list-alt"></i><span>吐槽板&#187;</span><i class="glyphicon glyphicon-time"></i><span>2018年3月1日下午</span>
+						</div>
+					</div>
+					<div class="tishi">
+						<p>❤ 欢迎光临子成君博客，来了就吐槽几句吧！</p>
+						<p>❤ 这是一堵水墙，没有节操限制，你可以自由吐槽...</p>
+						<p>❤ 需要交换网站友情链接，请自行做好本站链接后添加博主QQ审核。</p>
+						<p>❤ 但请不要在本博客发布无意义广告评论，相信我！删除真的只需要1秒！</p>
+					</div>
+					<h2 class="fabiaotucao"><span class="glyphicon glyphicon-pencil"></span>发表吐槽</h2>
+					<h2 class="leifeng">匿名评论 叫我雷锋~</h2>
+					<textarea name="" id="textarea" placeholder="让评论变得如此简单。" cols="30" rows="10"></textarea>
+					<!-- 提交清除 -->
+					<div class="tijiaoqingchu">
+						<form id="form1" runat="server" onsubmit="validateCode()" style="float: right; margin:5px;height: 34px;line-height: 34px">
+							<div class="code" id="checkCode" onclick="createCode()" ></div></td>
+							<a href="javascript:;" onclick="createCode()">看不清换一张</a>
+							验证码：
+							<input type="text"  id="inputCode" style="height: 24px;width: 60px;cursor: auto;" />
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="cleartext()">清除</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"  id="Button1" onclick="validateCode()">提交评论</button>
+						</form>
+					</div>
+					<!-- 提交清除 -->
+					<!-- 留言显示部分 -->
+					<div class="widget liuyanwidget">
+						<h4><span class="glyphicon glyphicon-comment"></span>最新评论</h4>
+						<ul class="zxpl">
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第一条评论,涛哥好帅噢！</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第二条评论,涛哥好帅噢！涛哥好帅噢！</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第三条评论,涛哥好帅噢！涛哥好帅噢！涛哥好帅噢！</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>这是第四条评论,涛哥好帅噢！涛哥好帅噢！涛哥好帅噢！涛哥好帅噢！涛哥好帅噢！</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>掘金的实力明显比湖人强一些，双方上半场并没有拉开分差，掘金稍稍领先湖人。但来到下半场，湖人的进攻效率明显下降，三节打完时落后掘金18分，末节很快被拉开到20分以上。今天的比赛中，还有很多湖人球迷来到现场观看比赛，但湖人最后客场惨败32分。</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>掘金的实力明显比湖人强一些，双方上半场并没有拉开分差，掘金稍稍领先湖人。但来到下半场，湖人的进攻效率明显下降，三节打完时落后掘金18分，末节很快被拉开到20分以上。今天的比赛中，还有很多湖人球迷来到现场观看比赛，但湖人最后客场惨败32分。</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>掘金的实力明显比湖人强一些，双方上半场并没有拉开分差，掘金稍稍领先湖人。但来到下半场，湖人的进攻效率明显下降，三节打完时落后掘金18分，末节很快被拉开到20分以上。今天的比赛中，还有很多湖人球迷来到现场观看比赛，但湖人最后客场惨败32分。</p>
+							</li>
+							<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>算上今天的比赛，掘金本赛季已经第10次将对手的得分限制在100分以下，高居联盟第一。对此，米尔萨普表示，掘金是一支非常强悍的防守队伍，“我们就是一支防守球队，我们希望在比赛中打出强悍一些。全队都是带着目标打球，不达目的誓不罢休。”</p>
+							</li>
+								<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>算上今天的比赛，掘金本赛季已经第10次将对手的得分限制在100分以下，高居联盟第一。对此，米尔萨普表示，掘金是一支非常强悍的防守队伍，“我们就是一支防守球队，我们希望在比赛中打出强悍一些。全队都是带着目标打球，不达目的誓不罢休。”</p>
+							</li>
+								<li>
+								<img src="img/default.jpg" alt="">
+								<span>匿名游客</span><br>
+								<span><i class="glyphicon glyphicon-time"></i>2018年11月28日</span>
+								<p><span class="glyphicon glyphicon-triangle-top"></span>算上今天的比赛，掘金本赛季已经第10次将对手的得分限制在100分以下，高居联盟第一。对此，米尔萨普表示，掘金是一支非常强悍的防守队伍，“我们就是一支防守球队，我们希望在比赛中打出强悍一些。全队都是带着目标打球，不达目的誓不罢休。”</p>
+							</li>
+						</ul>
+					</div>
+					<!-- 文章分页按钮 -->
+					<nav class="fybtn" aria-label="...">
+						<ul class="pagination">
+							<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+							<li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+							<li><a href="#">2 <span class="sr-only"></span></a></li>
+							<li><a href="#">3 <span class="sr-only"></span></a></li>
+							<li><a href="#">4 <span class="sr-only"></span></a></li>
+							<li><a href="#">5 <span class="sr-only"></span></a></li>
+							<li>
+							<li><a href="#">...<span class="sr-only"></span></a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- 文章分页按钮 -->
+					<!-- 留言显示部分 -->
+				</div>
+				<!-- 侧栏 -->
+				<div class="col-md-3">
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-map-marker"></span>欢迎来访！</h4>
+						<div class="iptu"></div>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-tasks"></span>分类</h4>
+						<ul class="clearfix">
+							<li class="duogefl">
+								<div>情感文章</div>
+								(<a href="javascript:void(0);">心情日志</a>
+								<a href="javascript:void(0);">杂记摘抄</a>)
+							</li>
+							<li class="duogefl">
+								<div>技术相关</div>
+								(<a href="javascript:void(0);">前端笔记</a>
+								<a href="javascript:void(0);">后端技术</a>
+								<a href="javascript:void(0);">全栈开发</a>)
+							</li>
+							<li class="dangefl">
+								<div>软件工具</div>
+								<div>网站源码</div>
+							</li>
+							<li class="dangefl">
+								<div>影视资源</div>
+								<div>音乐分享</div>
+							</li>
+							<li class="dangefl">
+								<div>其他资源</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-th-list"></span>存档</h4>
+						<ul class="clearfix">
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年11月(1)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年9月(3)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年4月(2)</div>
+							</li>
+
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年3月(6)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年12月(7)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年11月(7)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年10月(5)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年9月(3)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年8月(6)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年7月(2)</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-pencil"></span>最新文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-fire"></span>热门文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">4</em><a href="javascript:void(0);">乌克兰为何冒险挑衅俄罗斯？俄方一针见血指出背后原因</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">5</em><a href="javascript:void(0);">俄中学生2019年将首次参加国家统一考试汉语科目考试</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">6</em><a href="javascript:void(0);">深圳南山半马乱象：选手集体抄近道，多个号码被套牌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-random"></span>随机文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">4</em><a href="javascript:void(0);">乌克兰为何冒险挑衅俄罗斯？俄方一针见血指出背后原因</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">5</em><a href="javascript:void(0);">俄中学生2019年将首次参加国家统一考试汉语科目考试</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">6</em><a href="javascript:void(0);">深圳南山半马乱象：选手集体抄近道，多个号码被套牌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-link"></span>友情链接</h4>
+						<ul class="link">
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度百科</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度知道</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度文库</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">虎牙直播</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">熊猫直播</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">今日焦点</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">腾讯视频</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">腾讯游戏</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">中华文库</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">苏宁易购</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">新浪博客</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">搜狐影音</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">哔哩哔哩</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-qrcode"></span>加群交流</h4>
+						<div class="qrcode">
+							<img src="./img/weixin.jpg" alt="" width="240" height="240">
+						</div>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-signal"></span>站点统计</h4>
+						<div class="zdtj">
+							<p>微语数量：11条</p>
+							<p>文章数量：225篇</p>
+							<p>吐槽数量：572次</p>
+							<p>勉强存活：287天</p>
+							<p>诞生日期：2018年11月28号</p>
+						</div>
+					</div>
+				</div>
+				<!-- 侧栏 -->
+			</div>
+		</div>
+	</div>
+	<!-- 页面内容 end -->
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="container">
+			<p>文中出现的商标及图像版权属于其合法持有人，只供传递信息之用，非商务用途。互动交流时请遵守理性，宽容，换位思考的原则。</p>
+			<p>基于HTML+CSS+JavaScript+Bootstrap3.3.7+jQuery1.11.1</p>
+			<p>Copyright &copy; 2018-2018 By子成君</p>
+		</div>
+	</footer>
+	<!-- 底部 -->
+</body>
+</html>

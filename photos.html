@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>(゜-゜)つロ 干杯~</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/loading.css">
+	<link rel="icon" href="img/logo.png">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/global.js"></script>
+</head>
+<body>
+	<div id="back-top"><a href="#gotop" onclick="scrollToTop();return false"></a></div>
+	<!-- 头部 begin-->
+	<div class="header" id="gotop">
+		<div class="nav">
+			<nav class="clearfix">
+				<div class="navfl fl">
+					<ul class="clearfix">
+						<!-- <li><img src="img/hdrenwu.png" alt=""></li> -->
+						<li><a class="active" href="index.html">首页</a></li>
+						<li><a href="./t.html">微语</a></li>
+						<li><a href="./photos.html">相册</a></li>
+						<li><a href="./login.html">登陆</a></li>
+					</ul>
+				</div>
+				<!-- 左边结束 -->
+				<div class="navrt fr">
+					<ul class="clearfix">
+						<li><img src="img/hdrenwu.png" alt=""> <input type="text" placeholder="点击量top 10"><button onclick="test()"></button></li>
+						<li><a href="./guestbook.html">吐槽板</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- 头像部分 -->
+		<div class="tx">
+			<div class="img">
+				<a href="javascript:void(0);" title="名字+个人主页"></a>
+			</div>
+			<!-- 头像部分 -->
+			<!-- 微语公告 -->
+			<div class="wenzi">
+				<h1>Miller's blog</h1>
+				<div id="news">
+					<ul>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第一条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第一条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第二条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第一条，这是二个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第三条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第三条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第四条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第四条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第五条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第五条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第六条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第六条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+						<li><img src="img/weiyu.png" width="20" alt="">&nbsp;<a href="#" title="公告第七条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。">公告第七条，这是一个分享公开源码和网络资源，学习交流web前端技术的博客。</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 微语公告 -->
+		</div>
+	</div>	
+	<!-- 头部 end -->
+
+	<!-- 页面内容 begin -->
+	<div class="content">
+		<div class="container content-container">
+			<div class="row rowliuyan">
+				<div class="col-md-9 liuyanban">
+					<div class="page-header">
+						<h2><span class="glyphicon glyphicon-picture"></span>相册</h2>
+						<div class="lyxx">
+							<i class="glyphicon glyphicon-home"></i><a href="index.html">首页</a><span>&#187;</span><i class="glyphicon glyphicon-picture"></i><span>相册&#187;</span><i class="glyphicon glyphicon-time"></i><span>2018年3月1日下午</span>
+						</div>
+					</div>
+					<!-- 相册显示部分 -->
+					<div class="picturelists" id="piclists" style="text-align: center;">
+					</div>
+				</div>
+				<!-- 侧栏 -->
+				<div class="col-md-3">
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-map-marker"></span>欢迎来访！</h4>
+						<div class="iptu"></div>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-tasks"></span>分类</h4>
+						<ul class="clearfix">
+							<li class="duogefl">
+								<div>情感文章</div>
+								(<a href="javascript:void(0);">心情日志</a>
+								<a href="javascript:void(0);">杂记摘抄</a>)
+							</li>
+							<li class="duogefl">
+								<div>技术相关</div>
+								(<a href="javascript:void(0);">前端笔记</a>
+								<a href="javascript:void(0);">后端技术</a>
+								<a href="javascript:void(0);">全栈开发</a>)
+							</li>
+							<li class="dangefl">
+								<div>软件工具</div>
+								<div>网站源码</div>
+							</li>
+							<li class="dangefl">
+								<div>影视资源</div>
+								<div>音乐分享</div>
+							</li>
+							<li class="dangefl">
+								<div>其他资源</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-th-list"></span>存档</h4>
+						<ul class="clearfix">
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年11月(1)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年9月(3)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年4月(2)</div>
+							</li>
+
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2018年3月(6)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年12月(7)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年11月(7)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年10月(5)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年9月(3)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年8月(6)</div>
+							</li>
+							<li class="cundang">
+								<span class="glyphicon glyphicon-time"></span><div>2017年7月(2)</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-pencil"></span>最新文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-fire"></span>热门文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">4</em><a href="javascript:void(0);">乌克兰为何冒险挑衅俄罗斯？俄方一针见血指出背后原因</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">5</em><a href="javascript:void(0);">俄中学生2019年将首次参加国家统一考试汉语科目考试</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">6</em><a href="javascript:void(0);">深圳南山半马乱象：选手集体抄近道，多个号码被套牌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-random"></span>随机文章</h4>
+						<ul class="clearfix hotwz">
+							<li class="duogefl">
+								<em class="hotone">1</em><a href="javascript:void(0);">你最爱的两家茶饮开杠了！奈雪の茶VS喜茶：隔空掐架，到底谁在“抄袭”？</a>
+							</li>
+							<li class="duogefl">
+								<em class="hottwo">2</em><a href="javascript:void(0);">韩朝将组建联队参加2019年男子手球世锦赛</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotthree">3</em><a href="javascript:void(0);">被指广告数据造假市值跌去三分之一 猎豹移动：将起诉Kochava</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">4</em><a href="javascript:void(0);">乌克兰为何冒险挑衅俄罗斯？俄方一针见血指出背后原因</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">5</em><a href="javascript:void(0);">俄中学生2019年将首次参加国家统一考试汉语科目考试</a>
+							</li>
+							<li class="duogefl">
+								<em class="hotSoSo">6</em><a href="javascript:void(0);">深圳南山半马乱象：选手集体抄近道，多个号码被套牌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-link"></span>友情链接</h4>
+						<ul class="link">
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度百科</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度知道</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">百度文库</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">虎牙直播</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">熊猫直播</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">今日焦点</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">腾讯视频</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">腾讯游戏</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">中华文库</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">苏宁易购</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">新浪博客</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">搜狐影音</a>
+							</li>
+							<li><span class="glyphicon glyphicon-link"><a href="javascript:void(0);">哔哩哔哩</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-qrcode"></span>加群交流</h4>
+						<div class="qrcode">
+							<img src="./img/weixin.jpg" alt="" width="240" height="240">
+						</div>
+					</div>
+					<div class="widget">
+						<h4><span class="glyphicon glyphicon-signal"></span>站点统计</h4>
+						<div class="zdtj">
+							<p>微语数量：11条</p>
+							<p>文章数量：225篇</p>
+							<p>吐槽数量：572次</p>
+							<p>勉强存活：287天</p>
+							<p>诞生日期：2018年11月28号</p>
+						</div>
+					</div>
+				</div>
+				<!-- 侧栏 -->
+			</div>
+		</div>
+	</div>
+	<!-- 页面内容 end -->
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="container">
+			<p>文中出现的商标及图像版权属于其合法持有人，只供传递信息之用，非商务用途。互动交流时请遵守理性，宽容，换位思考的原则。</p>
+			<p>基于HTML+CSS+JavaScript+Bootstrap3.3.7+jQuery1.11.1</p>
+			<p>Copyright &copy; 2018-2018 By子成君</p>
+		</div>
+	</footer>
+	<!-- 底部 -->
+	<!-- 齿轮加载 -->
+	<div  id="loading" class="colorful_loading_frame" >
+  <div class="loader_overlay"></div>
+  <div class="loader_cogs">
+    <div class="loader_cogs__top">
+      <div class="top_part"></div>
+      <div class="top_part"></div>
+      <div class="top_part"></div>
+      <div class="top_hole"></div>
+    </div>
+    <div class="loader_cogs__left">
+      <div class="left_part"></div>
+      <div class="left_part"></div>
+      <div class="left_part"></div>
+      <div class="left_hole"></div>
+    </div>
+    <div class="loader_cogs__bottom">
+      <div class="bottom_part"></div>
+      <div class="bottom_part"></div>
+      <div class="bottom_part"></div>
+      <div class="bottom_hole"></div>
+    </div>
+  </div>
+</div>	
+	<!-- 齿轮加载 -->
+	<script>
+		$.ajax({
+			url:"data/piclists.json",
+			type:"get",
+			async:true,
+			beforeSend:function(){
+				$("#loading").show()
+			}
+		}).then(res=>{
+			$("#loading").hide()
+			let jsonObj = JSON.parse(res)
+			let imgs = jsonObj.data
+			for([id,img] of imgs.entries()){
+			$("#piclists").append(`
+					<div class="development" >
+							<div class="deve_img"><img src="${img.src}" alt="${img.desc}" width="160" height="120"><span>${img.desc}<br>分类:${img.sort}<br>时间:${img.time}</span></div>
+							<a class="development_a" href="./picview.html">${img.name}</a>
+						</div>
+				`)
+		}
+		},err=>console.log(err))
+	</script>
+</body>
+</html>
