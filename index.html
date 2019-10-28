@@ -389,8 +389,9 @@
   		$("#loading").show()
   	}
   }).then(res=>{
-  	let jsonObj=JSON.parse(res)
-  	let data = jsonObj.data
+  	// let jsonObj=JSON.parse(res)
+  	// let data = jsonObj.data
+	let data =res.data
   	$("#loading").hide()
   	for(let [key,article] of data.entries()){		
   	//判断一页最多7篇文章

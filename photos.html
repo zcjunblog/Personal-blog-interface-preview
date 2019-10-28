@@ -305,8 +305,9 @@
 			}
 		}).then(res=>{
 			$("#loading").hide()
-			let jsonObj = JSON.parse(res)
-			let imgs = jsonObj.data
+			// let jsonObj = JSON.parse(res)
+			// let imgs = jsonObj.data
+			let imgs = res.data
 			for([id,img] of imgs.entries()){
 			$("#piclists").append(`
 					<div class="development" >

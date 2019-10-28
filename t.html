@@ -307,8 +307,9 @@
 			}
 		}).then(res=>{
 			$("#loading").hide()
-			let jsonObj = JSON.parse(res)
-			let ts = jsonObj.data
+			// let jsonObj = JSON.parse(res)
+			// let ts = jsonObj.data
+			let ts = res.data
 			for([key,t] of ts.entries()){
 			$("#weiyu").append(`
 					<li> <em1></em1> <div class="avatar">${t.time}</div> <div class="tw-content"><em></em>${t.desc}....<br>
